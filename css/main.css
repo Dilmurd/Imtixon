@@ -1,0 +1,463 @@
+@font-face {
+    font-family: Philosopher;
+    src: url(../fonts/Philosopher-BoldItalic.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-BoldItalic.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    min-height: 1000vh;
+}
+a{
+    text-decoration: inherit;
+    color: #150C01;
+}
+li{
+    list-style: none;
+}
+img{            
+    max-height: 100%;
+}
+.desc{
+    color: #150C01;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Roboto;
+}
+.btn{
+    padding: 12px 30px;
+    background-color: #DC780B;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid #DC780B;
+    transition: .5s;
+}
+.btn:hover{
+    color: #DC780B;
+    background-color: #fff;
+    transform: translateY(-10px);
+}
+.container{
+    max-width: 1172px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+#header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 111;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 77px;
+    gap: 35px;
+}
+.navbar__collection{
+    display: flex;
+    flex: 1px;
+    gap: 41px;
+}
+.navbar__link:hover{
+    color: #DC780B;
+}
+.hero__wrapper{
+    width: 1140px;
+    height: 608px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 115px;
+}
+.hero__title{
+    color: #150C01;
+    font-weight: 700;
+    font-size: 48.83px;
+    margin-bottom: 42px ;
+    font-family: Philosopher;
+}
+.hero__desc{
+    color: #150C01;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    font-family: Roboto;
+}
+.feature__title{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #150C01;
+    transition: .5s;
+    font-family: Roboto;
+    margin-top: 115px;
+}
+.feature__title:hover{
+    color: #DC780B;
+}
+.feature__subtitle{
+    display: flex;
+    justify-content: center;
+    font-size: 31.25px;
+    font-weight: 700;
+    color: #150C01;
+    transition: .5s;
+    font-family: Philosopher;
+    margin-bottom: 44px;
+}
+.feature__subtitle:hover{
+    color: #DC780B;
+}
+.feature__wrapper{
+    display: flex;
+    gap: 90px;
+}
+.feature__card{
+    display: flex;
+}
+.feature__item{ 
+    width: 352px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feature__img{    
+    margin-bottom: 33px;
+}
+.feature__inf{
+    margin-bottom: 15px;
+    color: #150C01;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Philosopher;
+}
+.feature__desc{
+    color: #150C01;
+    font-size: 16px;
+    font-family: Roboto;
+}
+.about__wrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 123.73px; 
+    gap: 97px;
+}
+.about__img,
+.about__text{
+    width: calc(50% - 48.55px);
+}
+.about__title{
+    margin-bottom: 9.73px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Roboto;
+    color: #150C01;
+}
+.about__title:hover{
+    color: #DC780B;
+}
+.about__subtitle{
+    color: #150C01;
+    font-size: 31.25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.about__desc{
+    color: #150C01;
+    font-size: 16px;
+    margin-bottom: 29px;
+}
+.menu__subtitle{
+    display: flex;
+    justify-content: center;
+    font-size: 31.25px;
+    font-family: Philosopher;
+    color: #150C01;
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-top: 2px;
+}
+.menu__desc{
+    display: flex;
+    justify-content: center;
+    color: #150C01;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+.menu__wrapper{
+    display: flex;
+}
+.menu__card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.menu__item{
+    border: 1px solid #0000001A;
+    height: 446px;
+}
+.menu__item{
+    width: calc(33.33% - 20px);
+}
+.menu__item img{
+    border-radius:75px 0 0 0 ;
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 21px;
+}
+.menu__wrapper__price{
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    margin-bottom: 20px;
+}
+.menu__inf{
+    font-size: 25px;
+    display: flex;
+    flex: 1px;
+    color: #150C01;
+    font-weight: 700;
+    font-family: Philosopher;
+}
+.menu__adv{
+    font-size: 16px;
+    font-family: Roboto;
+    margin-bottom: 20px;
+    padding: 0 25px;
+}
+.menu__btn{
+    padding: 11px 16px;
+    border: none;
+    color: #fff;
+    background-color: #DC780B;
+    border-radius: 5px;
+    transition: .33s;
+}
+.menu__btn:hover{
+    background-color: #fff;
+    color: #DC780B;
+    border: 1px solid #DC780B;
+}
+.menu__font{
+    display: flex;
+    padding: 0 25px;
+    flex-direction: row;
+    align-items: center;
+}
+.fa-star{
+    position: relative;
+    left: 186px;
+    color: #DC780B; 
+}
+.menu__bottom{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+#take{
+    background-color: #fdf9f5
+}
+.take__wrapper{
+    display: flex;
+    padding: 56px;
+    align-items: center;
+    margin-top: 179px;
+    gap: 128px;
+}
+.take__title{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Roboto;
+    color: #150C01;
+    transition: .3s;
+    margin-bottom: ;
+}
+.take__title:hover{
+    color: #DC780B;
+}
+.take__subtitle{
+    font-size: 31.25px;
+    font-weight: 700;
+    font-family: Philosopher;
+    margin-top: 5px;
+}
+.take__desc{
+    font-size: 16px;
+    font-family: Roboto;
+    margin-top: 29px;
+    margin-bottom: 39px;
+}
+.take__icons{
+    display: flex;
+    gap: 30px;
+}
+#testimonial{
+    margin-top: 221px;
+}
+.testimonial__text-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonial__title{
+    color: #150C01;
+    transition: .22s;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Roboto;
+    margin-bottom: 12px;
+}
+.testimonial__title:hover{
+    color: #DC780B;
+}
+.testimonial__subtitle{
+    color: #150C01;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: Philosopher;
+    margin-bottom: 23px;
+}
+.testimonial__desc{
+    max-width: 700px;
+    font-size: 16px;
+    font-family: Roboto;
+    margin-bottom: 73px;
+}
+.testimonial__image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 42px;
+}
+.testimonial__bottom-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonial__text{
+    max-width: 500px;
+    font-size: 16px;
+    font-family: Roboto;
+    color: #000;
+    margin-bottom: 20px;
+}
+.testimonial__img{
+    margin-bottom: 32px;
+}
+.testimonial__bottom-title{
+    font-size: 16px;
+    font-family: Roboto;
+    margin-bottom: 6px;
+    color: #000;
+}
+.testimonial__bottom-subtitle{
+    color: #000;
+    font-family: Roboto;
+}
+#contact{
+    margin-top: 120px;
+    height: 75px;
+    background-color: #fbf2e7;
+    height: 448px;
+}
+.contact__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 115px;
+}
+.contact__title{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Roboto;
+    color: #150C01;
+    margin-bottom: 15px;
+}
+.contact__title:hover{
+    color: #DC780B;
+}
+.contact__subtitle{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: Philosopher;
+    margin-bottom: 46px;
+}
+.contact__input-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.contact__input{
+    width: 750px;
+    height: 75px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 32px;
+    outline: none;
+}
+.contact__btn{
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 2px;
+    background-color: #DC780B;
+    color: #fff;
+    border: solid #DC780B;
+    transition: .5s;
+}
+.contact__btn:hover{
+    color: #DC780B;
+    background-color: #fff;
+    transform: translateY(-10px);
+}
+#footer{
+    background-color: #252525;
+    height: 429px;
+}
+.footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 137px 150px;
+}
+.footer__logo img{
+    margin-bottom: 25px;
+}
+.footer__logo span{
+    display: flex;
+    color: #717171;
+    font-family: Roboto;
+}
+.footer__logo span:hover{
+    color: #ffff;
+}
+.footer__title{
+    color: #fff;
+}
+.footer__link{
+    color: #717171;
+    font-size: 18px;
+    font-family: Roboto;
+}
+.footer__link:hover{
+    color: #ffff;
+}
+.footer__collection img{
+    margin-top: 25px;
+}
